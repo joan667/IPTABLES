@@ -1,0 +1,9 @@
+#configuracion log
+
+//A Hacer en la gateway
+#filtros de rsyslog *A mejorar 
+#en /etc/rsyslog.d/iptables.conf
+
+:msg, contains, "IPTABLES USER1" -/var/log/iptables.log
+:msg, contains, "IPTABLES USER2" -/var/log/iptables.log
+& stop
