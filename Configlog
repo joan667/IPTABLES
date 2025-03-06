@@ -1,7 +1,7 @@
 #en /etc/rsyslog.d/iptables.conf
 
-:msg, contains, "IPTABLES USER1" -/var/log/iptables.log
-:msg, contains, "IPTABLES USER2" -/var/log/iptables.log
+:msg, contains, "[IPTABLES USER1]" -/var/log/iptablesUser1.log
+:msg, contains, "[IPTABLES USER2]" -/var/log/iptablesUser2.log
 & stop
 
 /etc/init.d/rsyslog restart
